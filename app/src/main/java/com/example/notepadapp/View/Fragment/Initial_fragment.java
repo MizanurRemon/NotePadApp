@@ -1,4 +1,4 @@
-package com.example.notepadapp.Model.Fragment;
+package com.example.notepadapp.View.Fragment;
 
 import android.os.Bundle;
 

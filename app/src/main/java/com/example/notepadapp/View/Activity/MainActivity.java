@@ -1,12 +1,12 @@
-package com.example.notepadapp.Model.Activity;
+package com.example.notepadapp.View.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.notepadapp.Model.Fragment.Initial_fragment;
-import com.example.notepadapp.Model.Fragment.Login_fragment;
+import com.example.notepadapp.View.Fragment.Initial_fragment;
 import com.example.notepadapp.R;
+import com.example.notepadapp.View.Fragment.Login_fragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new Initial_fragment()).commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.frame_container, new Login_fragment()).commit();
 
         }
     }
